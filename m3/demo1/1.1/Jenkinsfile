@@ -1,5 +1,5 @@
 pipeline {
-    agent slave_dotnet
+    agent { label 'slave_dotnet' }
     environment {
         VERSION = "0.1.0"        
         VERSION_RC = "rc.2"
