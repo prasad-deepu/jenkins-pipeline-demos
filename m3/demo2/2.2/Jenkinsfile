@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Audit tools') {                        
             steps {
-                auditTools2 message: 'This is demo 2' + ' '+"${BUILD_NUMBER}"
+                auditTools2 message: 'This is demo 2' + ' '+'and it\'s build number is: '+ "${BUILD_NUMBER}"
             }
         }
     }
