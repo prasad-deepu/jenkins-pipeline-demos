@@ -61,7 +61,7 @@ String getVersionSuffix() {
 void auditTools() {
     sh '''
         git version
-        docker version
+        sudo docker version
         dotnet --list-sdks
         dotnet --list-runtimes
     '''
