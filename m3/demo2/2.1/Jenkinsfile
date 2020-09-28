@@ -2,7 +2,7 @@ library identifier: 'jenkins-pipeline-demo-library@master',
         retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/prasad-deepu/jenkins-pipeline-demo-library.git'])
 
 pipeline {
-    agent any
+        agent {label 'slave_dotnet' }
     stages {
         stage('Audit tools') {                        
             steps {
