@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'slave_dotnet' }
     parameters {
         booleanParam(name: 'RC', defaultValue: false, description: 'Is this a Release Candidate?')
     }
